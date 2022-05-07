@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E1E2EF;
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    background-color: #02020A;
+    padding: 6em;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.maxwidth{
+    max-width: 1124px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+.top-header-title{
+    font-size: 3.5em;
+    text-decoration: none;
+    color: #B497D6;
+    display: inline-block;
+    transition: transform .2s ease;
+    
+}
+
+.top-header-title:hover{
+   transform: scale(1.05);
+   color: #E1E2EF;
+   font-weight: bold;
+
+}
+
+.top-header-subtitle{
+    font-size: .8em;
+    line-height: 1.4;
+    letter-spacing: .1em;
+    color: #E1E2EF;
+}
+
+.main-section{
+    text-align: center;
+    padding: 2em 2em 1em;
+}
+
+.main-section h2{
+    color: #05204A;
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+}
+
+.first-button{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #E1E2EF;
+
+    display: inline-block;
+    margin-top: .3em;
+    margin-bottom: 1.2em;
+    padding: .4em 3em;
+    background-color: #05204A;
+    border-radius: 6px;
+    transition: transform .2s ease;
+}
+
+.first-button:hover{
+    transform: scale(0.9);
+    background-color: #B497D6;
+}
+
+.card-button{
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: #E1E2EF;
+    color: #05204A;
+    font-weight: bold;
+
+    border-radius: 5px;
+    padding: .5em 2em;
+    display: inline-block;
+    margin-top: .3em;
+    transition: transform .2s linear;
+}
+
+.card-button:hover{
+    transform: scale(.9);
+}
+
+.second-section{
+    text-align: center;
+    margin: auto;
+    width: 94%;
+    border-radius: 10px;
+
+    color: #B497D6;
+}
+
+.article-icon{
+    display: inline-block;
+    font-size: 5em;
+    margin: .2em 1em .2em;
+}
+
+.card-section{
+    margin-bottom: 2em;
+    background-color: #02020A;
+    border-radius: 10px;
+    padding: 1.5em;
+    transition: transform .2s ease;
+}
+
+.card-section:hover{
+    transform: scale(1.05);
+    
+}
+
+.card-section h3{
+    display: block;
+    margin: .2em;
+    font-size: 2em;
+}
+
+.card-section p{
+    color: #E1E2EF;
+    font-size: 1.2em;
+}
+
+article:last-child .card-section{
+    margin-bottom: 0;
+}
+
+footer{
+    background-color: #02020A;
+    color: #E1E2EF;
+    padding: .2em;
+    text-align: center;
+}
+
+.footer-menushare{
+    list-style: none;
+    font-size: 2.5em;
+    margin: .3em 0em .2em;
+    padding: 0;
+}
+
+.footer-menushare a{
+    text-decoration: none;
+    color: #E1E2EF;
+}
+
+.footer-menushare li{
+    display: inline-block;
+    margin-left: .2em;
+    transition: transform .2s ease;
+}
+
+.footer-menushare li:hover{
+    transform: scale(1.1);
+}
+
+footer p{
+    display: inline;
+}
+
+@media screen and (min-width: 59.375em) {
+
+    header{
+        background-image: linear-gradient(180deg, rgba(0,0,0, 0.8), rgba(180, 151, 214, .3), transparent);
+        background-size: auto, 100% 100%;
+    }
+    
+    .top-header-subtitle{
+        font-size: 1.4em;
+    }
+
+    .main-section h2{
+        font-size: 2em;
+    }
+
+    .main-section p{
+        font-size: 1.4em;
+    }
+
+    .first-button{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 64em) {
+
+    .card{
+        box-sizing: border-box;
+        width: 46%;
+        margin: 2%;
+        margin-bottom: 0;
+        float: left;
+      
+    }
+
+    .card:last-child{
+        width: auto;
+        margin-bottom: 2em;
+    }
+
+    .card:last-child .card-section{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .card-section{
+        display: inline-block;
+    }
+}
+
+
+
+
+
+
